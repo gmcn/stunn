@@ -1,8 +1,70 @@
 footer {
-  background: #000;
-  padding: 5px;
+  background: #0E85B2;
+  padding-top: 50px;
   color: #fff;
-  a {
-    color: pink
+  .contact {
+    border-top: 2px dotted #fff;
+    padding-top: 25px;
+    margin-top: 25px;
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    a {
+      color: #fff;
+    }
+    a:hover {
+      color: #000;
+    }
+    p {
+
+    }
+    .social {
+      margin-bottom: 75px;
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+  .wpcf7-submit {
+    background: #1C72A0;
+    color: #fff;
+    padding: 20px 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    float: right;
+    transition: .5s;
+   }
+   .wpcf7-submit:hover {
+     background: #fff;
+     color: #1C72A0;
+    }
+  .signature {
+    position: relative;
+    margin-top: 50px;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    padding: 25px 0;
+    img.branding {
+      display: block;
+      position: absolute;
+      margin-top: -100px;
+      margin-bottom: 25px;
+    }
+    a {
+      color: #fff;
+      font-weight: 700;
+    }
+    .fb {
+      height: 20px;
+    }
+    .do {
+      position: absolute;
+      right: 15px;
+      height: 25px;
+    }
   }
 }
