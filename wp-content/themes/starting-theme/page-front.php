@@ -15,9 +15,13 @@
 get_header(); ?>
 
 <?php
-
-	
-
+	include(locate_template("inc/page-front/hero.php"));
+	include(locate_template("inc/page-front/about-section.php"));
+	include(locate_template("inc/page-front/gallery-section.php"));
+	include(locate_template("inc/page-front/social-feed.php"));
+	include(locate_template("inc/page-front/blog-section.php"));
+	include(locate_template("inc/page-front/blog.php"));
+	include(locate_template("inc/page-front/contact.php"));
  ?>
 
 <?php

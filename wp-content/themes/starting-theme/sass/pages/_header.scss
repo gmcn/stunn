@@ -15,3 +15,153 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
     display: block !important;
   }
 }
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 25px 15px;
+  .social-nav {
+    padding-top: 25px;
+    text-align: right;
+  }
+}
+
+span.open {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: url(images/nav_bg.svg) right no-repeat;
+    overflow-y: hidden;
+    transition: 0.5s;
+    img.branding {
+      position: absolute;
+      top: 100px;
+      right: 30px;
+      height: 80px;
+    }
+    .social {
+      position: absolute;
+      top: 200px;
+      right: 30px;
+      z-index: 999999;
+      a {
+        padding: 0;
+        text-decoration: none;
+        margin-right: 5px;
+        color: #fff;
+        display: inline;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      a:hover {
+        color: #1b86b0;
+      }
+      img {
+        display: inline-block;
+      }
+    }
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  .nav__wrapper {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    h3 {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0 0 15px 0;
+      text-transform: uppercase;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
+
+
+.overlay a {
+    @include md {
+      font-size: 50px;
+    }
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    // font-weight: $font__light;
+    color: #fff;
+    display: block;
+    // transition: 0.3s;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #0E85B2;
+    text-decoration: none;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 3px;
+    font-size: 75px;
+    line-height: 40px;
+    z-index: 99999;
+    transition: .5s;
+}
+
+.overlay .closebtn:hover {
+  transform: rotate(90deg);
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.in-nav {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  form {
+    display: inline;
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    input {
+      border: 0;
+    }
+    input.img {
+      vertical-align: bottom;
+    }
+  }
+  img {
+    height: 25px;
+    margin-left: 10px;
+  }
+}

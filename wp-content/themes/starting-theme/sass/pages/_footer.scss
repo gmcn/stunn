@@ -2,44 +2,7 @@ footer {
   background: #0E85B2;
   padding-top: 50px;
   color: #fff;
-  .contact {
-    border-top: 2px dotted #fff;
-    padding-top: 25px;
-    margin-top: 25px;
-    h4 {
-      font-size: 16px;
-      font-weight: 700;
-    }
-    a {
-      color: #fff;
-    }
-    a:hover {
-      color: #000;
-    }
-    p {
-
-    }
-    .social {
-      margin-bottom: 75px;
-      img {
-        margin-right: 5px;
-      }
-    }
-  }
-  .wpcf7-submit {
-    background: #1C72A0;
-    color: #fff;
-    padding: 20px 50px;
-    font-size: 12px;
-    text-transform: uppercase;
-    border: none;
-    float: right;
-    transition: .5s;
-   }
-   .wpcf7-submit:hover {
-     background: #fff;
-     color: #1C72A0;
-    }
+  
   .signature {
     position: relative;
     margin-top: 50px;

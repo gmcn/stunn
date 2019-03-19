@@ -1,3 +1,258 @@
 .home {
-  
+  header {
+    // display: none;
+    height: 0;
+    padding: 0;
+    .social-nav {
+      display: none;
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  img.scroll {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 450px;
+    background: url(images/hero_bg.svg) top left no-repeat;
+    img.branding {
+      position: absolute;
+      top: 100px;
+      right: 30px;
+      height: 80px;
+    }
+    img {
+      margin-right: 5px;
+    }
+    .social {
+      position: absolute;
+      top: 300px;
+      right: 30px;
+      span.open {
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+      }
+      a {
+        padding: 0;
+        text-decoration: none;
+        margin-right: 5px;
+        color: #fff;
+        display: inline;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.about_section {
+  border-top: 50px solid #D1458C;
+  &__copy {
+    color: #fff;
+    padding: 100px 100px 50px 100px;
+    @include lg {
+      padding: 180px 180px 100px 180px;
+    }
+    background: url(images/about_bg.svg) left center no-repeat;
+    .wrapper {
+      width: 50%;
+      margin-left: 25%;
+      h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 40px;
+        margin-top: 0;
+      }
+      p {
+        color: rgba(255,255,255,.5)
+      }
+    }
+  }
+}
+
+img.scroll {
+  margin-top: 50px;
+  width: 20px;
+}
+
+.gallery_section {
+  border-bottom: 50px solid #000;
+  text-align: right;
+  &__copy {
+    color: #fff;
+    padding: 100px 100px 50px 100px;
+    @include md {
+      padding: 180px 180px 100px 180px;
+    }
+    background: url(images/gallery_bg.svg) right center no-repeat;
+    .wrapper {
+      width: 50%;
+      margin-left: 25%;
+      h2 {
+        font-size: 16px;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 40px;
+        margin-top: 0;
+      }
+      p {
+        color: rgba(255,255,255,.5);
+        text-align: left;
+      }
+    }
+  }
+}
+
+.blog_section {
+  border-top: 50px solid #D4BE00;
+  &__copy {
+    color: #fff;
+    padding: 100px 100px 50px 100px;
+    @include md {
+      padding: 180px 180px 100px 180px;
+    }
+    background: url(images/blog_bg.svg) left center no-repeat;
+    .wrapper {
+      width: 50%;
+      margin-left: 25%;
+      h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 40px;
+        margin-top: 0;
+      }
+      p {
+        color: rgba(255,255,255,.5)
+      }
+    }
+  }
+}
+
+.juicer-feed {
+  .feed-item {
+    height: 240px;
+    overflow: hidden;
+    img {
+    }
+  }
+  .juicer-ad, .juicer-button {
+    display: none !important;
+  }
+  h1.referral {
+    display: none !important;
+  }
+  p {
+    color: #fff !important;
+  }
+  .j-image {
+    p {
+      color: #fff !important;
+    }
+  }
+  .j-meta a:hover {
+    color: #1b86b0 !important;
+}
+}
+.social-referral {
+  background: #000;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+  }
+  a:hover {
+    color: #1b86b0;
+  }
+}
+
+.blog-entry {
+  height: 350px;
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+  .date {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  h3 {
+    font-weight: 700;
+    margin-top: 50px;
+    font-size: 22px;
+  }
+  a {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .75);
+  }
+  a:hover {
+    color: #000;
+  }
+}
+
+.contact_wrapper {
+  background: #0E85B2;
+  color: #fff;
+  padding-top: 50px;
+  .contact {
+    border-top: 2px dotted #fff;
+    padding-top: 25px;
+    margin-top: 25px;
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    a {
+      color: #fff;
+    }
+    a:hover {
+      color: #000;
+    }
+    p {
+
+    }
+    .social {
+      margin-bottom: 75px;
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+  .wpcf7-submit {
+    background: #1C72A0;
+    color: #fff;
+    padding: 20px 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    float: right;
+    transition: .5s;
+   }
+   .wpcf7-submit:hover {
+     background: #fff;
+     color: #1C72A0;
+    }
 }

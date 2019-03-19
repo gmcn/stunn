@@ -1,5 +1,5 @@
 .login #loginform {
-	background: rgba(0,0,0,0.7) !important;
+	background: rgba(255,255,255,0.7) !important;
 }
 
 .login h1 a {
@@ -14,11 +14,11 @@
 }
 
 .login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
-	color: #f04b23;
+	color: #1b88b7;
 }
 
 body.login {
-  background: #fdfdfd url("../images/wp-login-bg.jpg");
+  background: #000;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

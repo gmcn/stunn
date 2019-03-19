@@ -109,6 +109,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Pages
 --------------------------------------------------------------*/
 @import "pages/elements";
+@import "pages/blog";
 
 /*--------------------------------------------------------------
 # Content
@@ -130,6 +131,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# fancybox
+--------------------------------------------------------------*/
+@import "media/fancybox";
 
 /*--------------------------------------------------------------
 # Bootstrap
