@@ -6,7 +6,7 @@
 
  ?>
 
-<div class="container-fluid about_section" id="about" style="background: url(<?php echo $about_img ?>) fixed;">
+<div class="container-fluid about_section" id="about" style="background: url(<?php echo $about_img ?>) left fixed; background-size: cover;">
   <div class="row">
     <div class="col-md-7 col-md-offset-5 about_section__copy wow fadeInRight">
       <div class="wrapper">

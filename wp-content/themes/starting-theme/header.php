@@ -41,13 +41,13 @@
 		          <img src="<?php echo get_template_directory_uri(); ?>/images/menu-icon.svg" alt="close">
 		        </span>
 						<a href="https://www.instagram.com/stunnphotography/">
-							<img src="//localhost:3000/wp-content/themes/starting-theme/images/instagram-logo.svg" alt="instagram">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/instagram-logo.svg" alt="instagram">
 						</a>
 						<a href="https://www.facebook.com/STUNNPhotography/">
-							<img src="//localhost:3000/wp-content/themes/starting-theme/images/facebook-logo.svg" alt="facebook">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/facebook-logo.svg" alt="facebook">
 						</a>
 						<a href="#">
-							<img src="//localhost:3000/wp-content/themes/starting-theme/images/youtube-logo.svg" alt="youtube">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/youtube-logo.svg" alt="youtube">
 						</a>
 					</div>
 				</div><!-- .col-md-6 -->

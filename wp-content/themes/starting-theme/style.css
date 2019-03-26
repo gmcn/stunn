@@ -655,8 +655,11 @@ span.open {
   margin-top: 30px; }
   .overlay-content .nav__wrapper {
     position: absolute;
-    top: 200px;
-    right: 300px; }
+    top: 300px;
+    right: 150px; }
+    @media screen and (min-width: 768px) {
+      .overlay-content .nav__wrapper {
+        right: 300px; } }
     .overlay-content .nav__wrapper h3 {
       font-size: 13px;
       font-weight: 400;
@@ -762,8 +765,9 @@ footer {
 .home header {
   height: 0;
   padding: 0; }
-  .home header .social-nav {
-    display: none; }
+  @media screen and (min-width: 1200px) {
+    .home header .social-nav {
+      display: none; } }
 
 .hero {
   height: 100vh;
@@ -813,21 +817,32 @@ footer {
   .about_section__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
-    background: url(images/about_bg.svg) left center no-repeat; }
+    margin-top: 500px;
+    background: #D1458C; }
+    @media screen and (min-width: 992px) {
+      .about_section__copy {
+        background: url(images/about_bg.svg) left center no-repeat;
+        margin-top: 0;
+        padding: 50px 50px 50px 50px; } }
     @media screen and (min-width: 1200px) {
       .about_section__copy {
-        padding: 180px 180px 100px 180px; } }
-    .about_section__copy .wrapper {
-      width: 50%;
-      margin-left: 25%; }
-      .about_section__copy .wrapper h2 {
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 40px;
-        margin-top: 0; }
-      .about_section__copy .wrapper p {
-        color: rgba(255, 255, 255, 0.5); }
+        padding: 130px 180px 100px 180px; } }
+    @media screen and (min-width: 992px) {
+      .about_section__copy .wrapper {
+        width: 75%;
+        margin-left: 25%; } }
+    @media screen and (min-width: 1200px) {
+      .about_section__copy .wrapper {
+        width: 50%;
+        margin-left: 25%; } }
+    .about_section__copy .wrapper h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 40px;
+      margin-top: 0; }
+    .about_section__copy .wrapper p {
+      color: rgba(255, 255, 255, 0.5); }
 
 img.scroll {
   margin-top: 50px;
@@ -839,44 +854,66 @@ img.scroll {
   .gallery_section__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
-    background: url(images/gallery_bg.svg) right center no-repeat; }
+    background: #000;
+    margin-top: 500px; }
     @media screen and (min-width: 992px) {
       .gallery_section__copy {
-        padding: 180px 180px 100px 180px; } }
-    .gallery_section__copy .wrapper {
-      width: 50%;
-      margin-left: 25%; }
-      .gallery_section__copy .wrapper h2 {
-        font-size: 16px;
-        text-align: left;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 40px;
-        margin-top: 0; }
-      .gallery_section__copy .wrapper p {
-        color: rgba(255, 255, 255, 0.5);
-        text-align: left; }
+        margin-top: 0;
+        padding: 50px 50px 50px 50px;
+        background: url(images/gallery_bg.svg) right center no-repeat; } }
+    @media screen and (min-width: 1200px) {
+      .gallery_section__copy {
+        padding: 130px 180px 100px 180px; } }
+    @media screen and (min-width: 992px) {
+      .gallery_section__copy .wrapper {
+        width: 75%;
+        margin-left: 25%; } }
+    @media screen and (min-width: 1200px) {
+      .gallery_section__copy .wrapper {
+        width: 50%;
+        margin-left: 25%; } }
+    .gallery_section__copy .wrapper h2 {
+      font-size: 16px;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 40px;
+      margin-top: 0; }
+    .gallery_section__copy .wrapper p {
+      color: rgba(255, 255, 255, 0.5);
+      text-align: left; }
 
 .blog_section {
   border-top: 50px solid #D4BE00; }
   .blog_section__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
-    background: url(images/blog_bg.svg) left center no-repeat; }
+    background: #D4BE00;
+    margin-top: 500px; }
     @media screen and (min-width: 992px) {
       .blog_section__copy {
-        padding: 180px 180px 100px 180px; } }
-    .blog_section__copy .wrapper {
-      width: 50%;
-      margin-left: 25%; }
-      .blog_section__copy .wrapper h2 {
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 40px;
-        margin-top: 0; }
-      .blog_section__copy .wrapper p {
-        color: rgba(255, 255, 255, 0.5); }
+        margin-top: 0;
+        padding: 50px 50px 50px 50px;
+        background: url(images/blog_bg.svg) left center no-repeat; } }
+    @media screen and (min-width: 1200px) {
+      .blog_section__copy {
+        padding: 130px 180px 100px 180px; } }
+    @media screen and (min-width: 992px) {
+      .blog_section__copy .wrapper {
+        width: 75%;
+        margin-left: 25%; } }
+    @media screen and (min-width: 1200px) {
+      .blog_section__copy .wrapper {
+        width: 50%;
+        margin-left: 25%; } }
+    .blog_section__copy .wrapper h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 40px;
+      margin-top: 0; }
+    .blog_section__copy .wrapper p {
+      color: rgba(255, 255, 255, 0.5); }
 
 .juicer-feed .feed-item {
   height: 240px;
@@ -917,6 +954,8 @@ img.scroll {
     font-weight: 700;
     margin-top: 50px;
     font-size: 22px; }
+  .blog-entry img {
+    margin-top: 40px; }
   .blog-entry a {
     position: absolute;
     bottom: 20px;

@@ -7,6 +7,8 @@ $args = array(
 );
 $query = new WP_Query( $args );
 
+$main_media_type = get_field('main_media_type');
+
  ?>
 
  <?php if ( $query->have_posts() ) : ?>
@@ -18,6 +20,21 @@ $query = new WP_Query( $args );
             <?php the_date('d.m.y'); ?>
           </div>
           <h3><?php the_title(); ?></h3>
+
+          <?php echo $main_media_type ?>
+
+          <?php if( get_field('main_media_type') == 'text' ) : ?>
+            <img src="<?php echo get_template_directory_uri() ?>/images/text-icon.svg" alt="">
+          <?php endif; ?>
+
+          <?php if (get_field('main_media_type') == 'video') : ?>
+            <img src="<?php echo get_template_directory_uri() ?>/images/play-icon.svg" alt="">
+          <?php endif; ?>
+
+          <?php if (get_field('main_media_type') == 'image') : ?>
+            <img src="<?php echo get_template_directory_uri() ?>/images/camera-icon.svg" alt="">
+          <?php endif; ?>
+
           <a href="<?php the_permalink(); ?>">Click here for more</a>
 
         </div>

@@ -4,7 +4,9 @@
     height: 0;
     padding: 0;
     .social-nav {
-      display: none;
+      @include lg {
+        display: none;
+      }
     }
   }
 }
@@ -65,13 +67,26 @@
   &__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
-    @include lg {
-      padding: 180px 180px 100px 180px;
+    margin-top: 500px;
+    background: #D1458C;
+    @include md {
+      background: url(images/about_bg.svg) left center no-repeat;
+      margin-top: 0;
+      padding: 50px 50px 50px 50px;
     }
-    background: url(images/about_bg.svg) left center no-repeat;
+    @include lg {
+      padding: 130px 180px 100px 180px;
+    }
+
     .wrapper {
-      width: 50%;
-      margin-left: 25%;
+      @include md {
+        width: 75%;
+        margin-left: 25%;
+      }
+      @include lg {
+        width: 50%;
+        margin-left: 25%;
+      }
       h2 {
         font-size: 16px;
         text-transform: uppercase;
@@ -97,13 +112,25 @@ img.scroll {
   &__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
+    background: #000;
+    margin-top: 500px;
     @include md {
-      padding: 180px 180px 100px 180px;
+      margin-top: 0;
+      padding: 50px 50px 50px 50px;
+      background: url(images/gallery_bg.svg) right center no-repeat;
     }
-    background: url(images/gallery_bg.svg) right center no-repeat;
+    @include lg {
+      padding: 130px 180px 100px 180px;
+    }
     .wrapper {
-      width: 50%;
-      margin-left: 25%;
+      @include md {
+        width: 75%;
+        margin-left: 25%;
+      }
+      @include lg {
+        width: 50%;
+        margin-left: 25%;
+      }
       h2 {
         font-size: 16px;
         text-align: left;
@@ -125,13 +152,25 @@ img.scroll {
   &__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
+    background: #D4BE00;
+    margin-top: 500px;
     @include md {
-      padding: 180px 180px 100px 180px;
+      margin-top: 0;
+      padding: 50px 50px 50px 50px;
+      background: url(images/blog_bg.svg) left center no-repeat;
     }
-    background: url(images/blog_bg.svg) left center no-repeat;
+    @include lg {
+      padding: 130px 180px 100px 180px;
+    }
     .wrapper {
-      width: 50%;
-      margin-left: 25%;
+      @include md {
+        width: 75%;
+        margin-left: 25%;
+      }
+      @include lg {
+        width: 50%;
+        margin-left: 25%;
+      }
       h2 {
         font-size: 16px;
         text-transform: uppercase;
@@ -200,6 +239,9 @@ img.scroll {
     font-weight: 700;
     margin-top: 50px;
     font-size: 22px;
+  }
+  img {
+    margin-top: 40px;
   }
   a {
     position: absolute;

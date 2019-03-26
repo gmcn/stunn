@@ -7,7 +7,7 @@
 
 <div class="container-fluid hero" style="background: url(<?php echo $heroImg ?>) center center; background-size: cover;">
   <img class="scroll pulse" src="<?php echo get_template_directory_uri(); ?>/images/scroll.svg" alt="scroll">
-  <div class="header">
+  <div class="header hidden-xs hidden-sm hidden-md">
 
       <a href="/">
         <img class="branding" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Stunn Photography">
