@@ -64,6 +64,10 @@
 
 .about_section {
   border-top: 50px solid #D1458C;
+  @include md {
+    background-size: cover;
+    background-attachment: fixed;
+  }
   &__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
@@ -109,6 +113,11 @@ img.scroll {
 .gallery_section {
   border-bottom: 50px solid #000;
   text-align: right;
+  background-position: left;
+  @include md {
+    background-attachment: fixed;
+    background-size: cover;
+  }
   &__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
@@ -149,6 +158,10 @@ img.scroll {
 
 .blog_section {
   border-top: 50px solid #D4BE00;
+  @include md {
+    background-size: cover;
+    background-attachment: fixed;
+  }
   &__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;

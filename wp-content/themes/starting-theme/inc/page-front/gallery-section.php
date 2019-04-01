@@ -6,7 +6,7 @@
 
  ?>
 
-<div class="container-fluid gallery_section" id="gallery" style="background: url(<?php echo $gallery_img ?>) fixed; background-size: cover;">
+<div class="container-fluid gallery_section" id="gallery" style="background-image: url(<?php echo $gallery_img ?>);">
   <div class="row">
     <div class="col-md-6 gallery_section__copy wow fadeInLeft">
       <div class="wrapper">

@@ -655,11 +655,11 @@ span.open {
   margin-top: 30px; }
   .overlay-content .nav__wrapper {
     position: absolute;
-    top: 300px;
+    top: 200px;
     right: 150px; }
     @media screen and (min-width: 768px) {
       .overlay-content .nav__wrapper {
-        right: 300px; } }
+        right: 250px; } }
     .overlay-content .nav__wrapper h3 {
       font-size: 13px;
       font-weight: 400;
@@ -814,6 +814,10 @@ footer {
 
 .about_section {
   border-top: 50px solid #D1458C; }
+  @media screen and (min-width: 992px) {
+    .about_section {
+      background-size: cover;
+      background-attachment: fixed; } }
   .about_section__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
@@ -850,7 +854,12 @@ img.scroll {
 
 .gallery_section {
   border-bottom: 50px solid #000;
-  text-align: right; }
+  text-align: right;
+  background-position: left; }
+  @media screen and (min-width: 992px) {
+    .gallery_section {
+      background-attachment: fixed;
+      background-size: cover; } }
   .gallery_section__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;
@@ -885,6 +894,10 @@ img.scroll {
 
 .blog_section {
   border-top: 50px solid #D4BE00; }
+  @media screen and (min-width: 992px) {
+    .blog_section {
+      background-size: cover;
+      background-attachment: fixed; } }
   .blog_section__copy {
     color: #fff;
     padding: 100px 100px 50px 100px;

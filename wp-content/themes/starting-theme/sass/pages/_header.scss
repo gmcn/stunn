@@ -79,10 +79,10 @@ span.open {
   margin-top: 30px;
   .nav__wrapper {
     position: absolute;
-    top: 300px;
+    top: 200px;
     right: 150px;
     @include sm {
-      right: 300px;
+      right: 250px;
     }
     h3 {
       font-size: 13px;
